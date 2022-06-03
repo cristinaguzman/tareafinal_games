@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-dark bg-info">
-    <nav class="container navbar navbar-expand-lg navbar-dark bg-info">
+  <div class="bg-info">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
       <a class="navbar-brand" href="#">Games Opinion</a>
       <button
         class="navbar-toggler"
@@ -13,7 +13,7 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active pr-4">
             <router-link class="nav-link" to="/">
