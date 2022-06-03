@@ -3,13 +3,13 @@
     <NavBar />
     <h1>vista de administracion</h1>
     <div>
-      <table class="table table-striped col-sm-12">
+      <table class="table table-striped">
         <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">PERSONA</th>
-            <th scope="col">JUEGO</th>
-            <th scope="col">OPINIÓN</th>
+            <th scope="col">Persona</th>
+            <th scope="col">Juego</th>
+            <th scope="col">Opinion</th>
             <th scope="col"></th>
             <th scope="col"></th>
           </tr>
@@ -25,12 +25,23 @@
             </td>
             <td>{{ opinion.opinion }}</td>
             <td>
-              <button @click="eliminarOpinion" type="button" class="btn btn-danger">
+              <button @click="eliminarOpinion(opinion.id)" type="button" class="btn btn-danger">
                 Eliminar
               </button>
             </td>
             <td>
-              <button @click="editarOpinion" type="button" class="btn btn-info">Editar</button>
+              <router-link
+                type="button"
+                class="btn btn-info"
+                :to="{
+                  name: 'editar-View',
+                  params: {
+                    id: opinion.id,
+                  },
+                }"
+              >
+                Editar
+              </router-link>
             </td>
           </tr>
         </tbody>
@@ -65,9 +76,4 @@ export default {
 }
 </script>
 
-<style>
-body {
-  font: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-</style>
+<style></style>
