@@ -3,10 +3,8 @@
     <NavBar />
 
     <div>
-      <h1>Lista de Opiniones</h1>
-      <div v-if="opinions.length === ''" class="alert alert-danger" role="alert">
-        No existen opiniones por mostrar
-      </div>
+      <h1 class="text-center">Lista de opiniones</h1>
+      <div class="alert alert-danger" role="alert">No existen opiniones por mostrar</div>
       <div>
         <ul class="list-group">
           <li class="list-group-item" v-for="(opinion, $index) of opinions" :key="$index">

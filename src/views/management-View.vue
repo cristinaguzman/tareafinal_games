@@ -1,7 +1,8 @@
 <template>
   <div>
     <NavBar />
-    <h1>vista de administracion</h1>
+    <h1 class="text-center">Administrar la Lista de Opiniones</h1>
+    <div class="alert alert-danger" role="alert">No existen opiniones por mostrar</div>
     <div>
       <table class="table table-striped">
         <thead>

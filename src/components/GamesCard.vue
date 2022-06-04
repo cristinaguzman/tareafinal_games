@@ -15,7 +15,8 @@
               <li class="list-group-item">Released: {{ AllGame.released }}</li>
               <li class="list-group-item">Updated: {{ AllGame.updated }}</li>
             </ul>
-            <button type="button" class="btn btn-success" @click="showModal = true">Opinar</button>
+            <br />
+            <button type="button" class="btn bg-info" @click="showModal = true">Opinar</button>
           </div>
         </div>
       </div>
